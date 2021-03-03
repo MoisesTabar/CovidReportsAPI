@@ -38,3 +38,4 @@ $ npm start
 ## To-do
 * Design the system
 * Design the architecture
+* Scaffold the data
