@@ -36,6 +36,6 @@ $ npm start
 ```
 
 ## To-do
-* Design the system
-* Design the architecture
-* Scaffold the data
+* [ ] Design the API
+* [ ] Document the API
+* [ ] Scaffold the data
