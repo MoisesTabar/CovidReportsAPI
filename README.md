@@ -7,7 +7,7 @@ Simple report generation API created in NodeJS, Express and MongoDB with third p
 * [How to use](#how-to-use)
 
 ## General info
-This project is being created with the purpose of reporting the violations taken to prevent the SarsCoV-2 virus. This API works as a fast report generator and visualizer of the dairy cases in the world, specific countries and your in your current location.
+This project is being created with the purpose of reporting the violations taken to prevent the SarsCoV-2 virus. This API works as a fast report generator and visualizer of the dairy cases in the world, specific countries and your in your current location. <b>Report generation only available for Dominican Republic</b>.
 
 ## Technologies
 This project is created with:
