@@ -34,8 +34,10 @@ $ npm install
 $ npm start
 
 ```
+## Assets of the API
+<img src="./Assets/API Design.jpg" style="float: left; margin-right: 10px;" />
 
 ## To-do
-* [ ] Design the API
+* [ x ] Design the API
 * [ ] Document the API
 * [ ] Scaffold the data
