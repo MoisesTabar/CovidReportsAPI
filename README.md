@@ -35,7 +35,7 @@ $ npm start
 
 ```
 ## Assets of the API
-<img src="./Assets/API Design.jpg" style="float: left; margin-right: 10px;" />
+<img src="./assets/Covid19API_Design" style="float: left; margin-right: 10px;" />
 
 ## To-do
 * [x] Design the API
