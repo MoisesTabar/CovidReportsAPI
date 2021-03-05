@@ -1,6 +1,10 @@
-import { Application, urlencoded, json } from 'express';
+import { Application, Router, urlencoded, json } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+
+//database connection imports
+import { mongoConnection } from './database/mongoose';
+import { redisConnection } from './database/ioredis';
 
 export class Server{
     public readonly app: Application;
@@ -26,13 +30,15 @@ export class Server{
         this.app.use(json());
         this.app.use(cors());
         this.app.use(morgan('dev'));
+
+        mongoConnection(this.MONGO_URI);
+        redisConnection(this.REDIS_URI);
     }
 
     /*
     * Routes method to implement routes
     */
     private routes(){
-        this.app.get('/', () => console.log('Hi'));
     }
 
     /*
