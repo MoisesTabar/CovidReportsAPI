@@ -19,7 +19,7 @@ This project is created with:
 * Express
 * MongoDB
 * Jest
-* <i>More technologies to be added</i>
+* Redis
 
 ## How to use
 To clone and run locally this API, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
