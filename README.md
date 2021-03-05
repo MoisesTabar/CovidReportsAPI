@@ -5,6 +5,7 @@ Simple report generation API created in NodeJS, Express and MongoDB with third p
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [How to use](#how-to-use)
+* [API Design](#api-design)
 
 ## General info
 This project is being created with the purpose of reporting the violations taken to prevent the SarsCoV-2 virus. This API works as a fast report generator and visualizer of the dairy cases in the world, specific countries and your in your current location. <b>Report generation only available for Dominican Republic</b>.
@@ -34,8 +35,9 @@ $ npm install
 $ npm start
 
 ```
-## Assets of the API
-<img src="./assets/Covid19API_Design.jpg" style="float: left; margin-right: 10px;" />
+
+## API Design
+![API DESIGN](/assets/Covid19API_Design.jpg)
 
 ## To-do
 * [x] Design the API
