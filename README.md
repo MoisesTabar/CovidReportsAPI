@@ -5,6 +5,7 @@ Simple report generation API created in NodeJS, Express and MongoDB with third p
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [How to use](#how-to-use)
+* [Available Scripts](#available-scripts)
 * [API Design](#api-design)
 * [API Documentation](#api-documentation)
 
@@ -34,9 +35,31 @@ $ cd Covid-Reports-API
 $ npm install
 
 # Run it
-$ npm start
+$ npm run start
 
 ```
+
+## Available Scripts
+```
+npm run test 
+```
+<b>Starts the test cases once</b>
+
+```
+npm run dev
+```
+<b>Starts the app in development mode using nodemon and ts-node to do hot reloading</b>
+
+```
+npm run build
+```
+<b>Builds the app at build, cleaning the build folder first</b>
+
+```
+npm run start
+```
+<b>Starts the app in production building the proyect with ```npm run build``` and executing the compiled JavaScript at build/app.js</b>
+
 
 ## API Design
 ![API DESIGN](/assets/Covid19API_Design.jpg)
@@ -62,4 +85,4 @@ Other technologies used to increase this API use is hashing and endpoint protect
 ## To-do
 * [x] Design the API
 * [x] Document the API
-* [ ] Scaffold the data
+* [x] Scaffold the data
