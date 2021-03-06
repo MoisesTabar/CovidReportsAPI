@@ -1,14 +1,11 @@
-import { Router } from 'express';
+import { BaseRouter } from './base.routes';
 
-class ReportRouting{
-    public router: Router;
-
-    public constructor(){
-        this.router = Router();
-        this.routes();
+class ReportRouting extends BaseRouter{
+    constructor(){
+        super();
     }
 
-    private routes(){
+    protected routes(){
         this.router.post('/create', () => console.log('Create'));
         this.router.post('/update/:id', () => console.log('Update'));
         this.router.post('/delete:id', () => console.log('Delete'));

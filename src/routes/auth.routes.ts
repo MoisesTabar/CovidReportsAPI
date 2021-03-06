@@ -1,14 +1,11 @@
-import { Router } from 'express';
+import { BaseRouter } from './base.routes';
 
-class AuthRouting{
-    public router: Router;
-
-    public constructor(){
-        this.router = Router();
-        this.routes();
+class AuthRouting extends BaseRouter{
+    constructor(){
+        super();
     }
 
-    private routes(){
+    protected routes(){
         this.router.post('/login', () => console.log('Login'));
         this.router.post('/signin', () => console.log('Signin'));
         this.router.post('/signout', () => console.log('Signout'));
