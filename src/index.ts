@@ -6,19 +6,27 @@ import morgan from 'morgan';
 import { mongoConnection } from './database/mongoose';
 import { redisConnection } from './database/ioredis';
 
+//routes import 
+import { authRouter } from './routes/auth.routes';
+import { homeRouter } from './routes/home.routes';
+import { reportRouter } from './routes/reports.routes';
+
 export class Server{
     public readonly app: Application;
+
     private readonly PORT: string;
     private readonly MONGO_URI: string;
     private readonly REDIS_URI: string;
 
     public constructor(app: Application){
         this.app = app;
+
         this.PORT = process.env.PORT!;
         this.MONGO_URI = process.env.MONGO_URI!;
         this.REDIS_URI = process.env.REDIS_URI!;
 
         this.config();
+        this.routes();
     }
 
     /*
@@ -32,6 +40,15 @@ export class Server{
 
         mongoConnection(this.MONGO_URI);
         redisConnection(this.REDIS_URI);
+    }
+
+    /*
+    * Routes method to implement routes
+    */
+    private routes(){
+        this.app.use('/', homeRouter);
+        this.app.use('/auth', authRouter);
+        this.app.use('/reports', reportRouter);
     }
 
     /*
