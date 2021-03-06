@@ -86,5 +86,5 @@ Other technologies used to increase this API use is hashing and endpoint protect
 * [x] Design the API
 * [x] Document the API
 * [x] Scaffold the data
-* [ ] Create routes and models
+* [x] Create routes and models
 * [ ] Create controllers 
