@@ -1,4 +1,4 @@
-import { Application, Router, urlencoded, json } from 'express';
+import { Application, urlencoded, json } from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 
@@ -8,9 +8,9 @@ import { redisConnection } from './database/ioredis';
 
 export class Server{
     public readonly app: Application;
-    public readonly PORT: string;
-    public readonly MONGO_URI: string;
-    public readonly REDIS_URI: string;
+    private readonly PORT: string;
+    private readonly MONGO_URI: string;
+    private readonly REDIS_URI: string;
 
     public constructor(app: Application){
         this.app = app;
@@ -19,7 +19,6 @@ export class Server{
         this.REDIS_URI = process.env.REDIS_URI!;
 
         this.config();
-        this.routes();
     }
 
     /*
@@ -33,12 +32,6 @@ export class Server{
 
         mongoConnection(this.MONGO_URI);
         redisConnection(this.REDIS_URI);
-    }
-
-    /*
-    * Routes method to implement routes
-    */
-    private routes(){
     }
 
     /*
