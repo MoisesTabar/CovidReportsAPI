@@ -65,7 +65,7 @@ npm run start
 ![API DESIGN](/assets/Covid19API_Design.jpg)
 
 ## API Documentation
-This API will include routes that will implemented different http methods<b>(GET, POST, PUT, DELETE)</b>expecting them to return 200 or 201 depending on the case. Test Driven Development, SOLID, OOP principles and paradigms will be present in this project, in order to give other developers a good time while reading and analyzing the code and commenting better implementations<b>(When we make errors we learn)</b>. The following table will describe the different routes and what they are supose to respond when requesting them. 
+This API will include routes that will implemented different http methods<b>(GET, POST, PUT, DELETE)</b>expecting them to return 200 or 201 depending on the case. The following table will describe the different routes and what they are supose to respond when requesting them. 
 | Routes        | Functionalities| Code  |
 |:-------------:|:--------------:|:-----:|
 | `/`           | Gets all cases | 200   |

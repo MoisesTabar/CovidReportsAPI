@@ -7,9 +7,7 @@ import { mongoConnection } from './database/mongoose';
 import { redisConnection } from './database/ioredis';
 
 //routes import 
-import { authRouter } from './routes/auth.routes';
 import { homeRouter } from './routes/home.routes';
-import { reportRouter } from './routes/reports.routes';
 
 export class Server{
     public readonly app: Application;
@@ -47,8 +45,6 @@ export class Server{
     */
     private routes(){
         this.app.use('/', homeRouter);
-        this.app.use('/auth', authRouter);
-        this.app.use('/reports', reportRouter);
     }
 
     /*

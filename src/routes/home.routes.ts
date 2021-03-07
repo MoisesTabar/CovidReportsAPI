@@ -1,15 +1,9 @@
-import { BaseRouter } from './base.routes';
+import { Router } from 'express';
 
-class HomeRouting extends BaseRouter{
-    constructor(){
-        super();
-    }
+export const homeRouter = Router();
 
-    protected routes(){
-        this.router.get('/', () => console.log('All cases'));
-        this.router.get('/:country', () => console.log('By country'));
-        this.router.get('/location', () => console.log('Location'));
-    }
-} 
+//home page routes
+homeRouter.get('/', () => console.log('All cases'));
+homeRouter.get('/:country', () => console.log('By country'));
+homeRouter.get('/location', () => console.log('By location'));
 
-export const homeRouter = new HomeRouting().router;
