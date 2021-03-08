@@ -33,3 +33,27 @@ export async function getAllCases(): Promise<any>{
 
     return data;
 }
+
+/**
+* Gets the information of the cases near your current location
+* @returns a response of type Promise<any>
+*/
+export async function getCasesByLocation(): Promise<any>{
+    const request = await axios.get(`https://corona.lmao.ninja/v2/countries/DR`, {
+        headers: { },
+        responseType: 'json'
+    });
+    const response = await request.data;
+    const { country, cases, todayCases, deaths, todayDeaths, active, tests} = response;
+    const data: object = {
+        country: country,
+        cases: cases, 
+        todayCases: todayCases,
+        deaths: deaths, 
+        todayDeaths: todayDeaths, 
+        active: active,
+        tests: tests
+    };
+
+    return data;
+}

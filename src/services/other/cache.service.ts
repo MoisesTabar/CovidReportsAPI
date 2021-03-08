@@ -11,7 +11,7 @@ const redis = new Redis();
 */
 export async function cacheData(key: any, value: any){
     try {        
-        const saveData = await redis.set(key, JSON.stringify(value), 'EX', 10);
+        const saveData = await redis.set(key, JSON.stringify(value), 'EX', 10 * 10 * 24);
         return saveData;
     } 
     catch (error) {

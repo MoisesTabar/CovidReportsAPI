@@ -6,6 +6,6 @@ export const homeRouter = Router();
 
 //home page routes
 homeRouter.get('/', homeController.allCases);
-homeRouter.get('/:country', () => console.log('By country'));
-homeRouter.get('/location', () => console.log('By location'));
+homeRouter.get('/country', () => console.log('By country'));
+homeRouter.get('/location', homeController.casesByLocation);
 
