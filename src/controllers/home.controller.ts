@@ -17,7 +17,6 @@ export class HomeController{
         try {
             const casesByLocation = await getCasesByLocation();
             return res.status(200).json({data: casesByLocation});
-    
         }
         catch(error) {
             console.log(error);
@@ -32,7 +31,6 @@ export class HomeController{
 
             const casesByCountry = await getCasesByCountry(country);
             return res.status(200).json({data: casesByCountry});
-    
         } 
         catch (error) {
             console.log(error);

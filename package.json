@@ -4,7 +4,7 @@
   "description": "A Covid19 API",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --check-leaks --exit ./src/tests/*.spec.ts",
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' mocha -r ts-node/register --exit ./src/tests/*.spec.ts",
     "dev": "nodemon",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/app.js"
