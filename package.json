@@ -21,6 +21,7 @@
   "homepage": "https://github.com/MoisesTabar/CovidReportsAPI#readme",
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/bcrypt": "^3.0.0",
     "@types/chai": "^4.2.15",
     "@types/chai-http": "^4.2.0",
     "@types/cors": "^2.8.10",
@@ -39,6 +40,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
     "chai": "^4.3.3",
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",

@@ -1,6 +1,12 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, Model, Document } from 'mongoose';
 
-export const userSchema = model('user', new Schema({
+export interface userDto extends Document{
+    nationalId: string,
+    password: string,   
+    names: string
+}
+
+export const userSchema = model<userDto>('user', new Schema({
     nationalId: {
         type: String,
         required: true,
