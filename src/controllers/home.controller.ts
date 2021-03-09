@@ -28,13 +28,15 @@ export class HomeController{
     public async casesByCountry(req: Request, res: Response):Promise<Response>{
         try {
             const { country } = req.params;
+            if(!country) return res.status(400).json({error: 'Missing the country parameter'})
+
             const casesByCountry = await getCasesByCountry(country);
             return res.status(200).json({data: casesByCountry});
     
         } 
         catch (error) {
             console.log(error);
-            return res.status(400).json({err: error});   
+            return res.status(400).json({error: error});   
         }
     }
 }  
