@@ -18,7 +18,7 @@ This project is created with:
 * Typescript
 * Express
 * MongoDB
-* Jest
+* Mocha/Chai
 * Redis
 
 ## How to use
