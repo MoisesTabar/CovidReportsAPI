@@ -10,7 +10,7 @@ import { getCachedData, cacheData } from '../services/other/cache.service';
 export async function homeRepository(url: string, label: any){
     const verifyCache = await getCachedData(label);
     if(verifyCache){
-        return verifyCache;
+        return JSON.parse(verifyCache);
     }
 
     const request = await axios.get(url, {
