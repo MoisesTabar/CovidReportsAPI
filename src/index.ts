@@ -9,6 +9,7 @@ import { redisConnection } from './database/ioredis';
 //routes import 
 import { homeRouter } from './routes/home.routes';
 import { usersRouter } from './routes/user.routes';
+import { reportRouter } from './routes/report.routes';
 
 export class Server{
     public readonly app: Application;
@@ -47,6 +48,7 @@ export class Server{
     private routes(){
         this.app.use('/', homeRouter);
         this.app.use('/auth', usersRouter);
+        this.app.use('/report', reportRouter);
     }
 
     /*
