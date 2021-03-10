@@ -73,7 +73,6 @@ This API will include routes that will implemented different http methods<b>(GET
 | `/location`   | Gets cases by current location | 200 |
 | `/auth/login` | Logs in a signed in user | 200 |
 | `/auth/signup`| Signs in an not existant user  | 201 |
-| `/auth/signout` | Logs out a login user        | 204 |
 | `/reports/create`   | Creates a report<b>(Login required)</b>  | 201 |
 | `/reports/update/:id`   | Updates a report<b>(Login required)</b>| 202 |
 | `/reports/delete/:id`   | Deletes a report<b>(Login required)</b>| 202 |
@@ -90,3 +89,5 @@ Other technologies used to increase this API use is hashing and endpoint protect
 * [x] Create controllers 
 * [x] Finish homeController
 * [x] Create the logic of the users controller
+* [x] Make tests for the users routes
+* [] Create the logic of the reports controller
