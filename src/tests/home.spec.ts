@@ -10,7 +10,7 @@ chai.should();
 describe('Home route tests', () => {
     before(async() => {
         await chai.request(url).post('/auth/login').send({
-            "nationalId": "40215235587",
+            "nationalId": "xd",
             "password": "Moises"
         }).then((res) => {
             chai.expect(res).to.have.status(200);

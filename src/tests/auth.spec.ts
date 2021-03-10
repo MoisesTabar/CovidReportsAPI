@@ -9,7 +9,7 @@ chai.should();
 describe('Auth routes tests', () => {
     it('Should register a user correctly if the id is available', async() => {
         await chai.request(url).post('/auth/signup').send({
-            "nationalId": "0550002131",
+            "nationalId": "xd",
             "password": "some"
         }).then((res) => {
             chai.expect(res).to.have.status(201);
