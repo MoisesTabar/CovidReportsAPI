@@ -4,4 +4,3 @@ build
 *.rdb
 *.key
 *.key.pub
-.vscode
