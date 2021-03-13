@@ -92,5 +92,4 @@ Other technologies used to increase this API use is hashing and endpoint protect
 * [x] Make tests for the users routes
 * [x] Create the logic of the reports controller
 * [] Finish reports controller
-* [] Make tests for the report routes
-* [] Deploy the API
+* [x] Make tests for the report routes
