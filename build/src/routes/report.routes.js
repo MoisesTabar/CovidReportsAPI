@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.reportRouter = void 0;
+const express_1 = require("express");
+const report_controller_1 = require("../controllers/report.controller");
+const isLogged_1 = require("../middlewares/isLogged");
+const reportController = new report_controller_1.ReportController();
+exports.reportRouter = express_1.Router();
+exports.reportRouter.post('/create', isLogged_1.isLogged, reportController.createReport);
+exports.reportRouter.put('/update/:id', isLogged_1.isLogged);
+exports.reportRouter.delete('/delete/:id', isLogged_1.isLogged);
