@@ -1,4 +1,4 @@
-import chaiHttp from 'chai-Http';
+import chaiHttp from 'chai-http';
 import chai from 'chai';
 
 const url: string = 'http://localhost:3000';
