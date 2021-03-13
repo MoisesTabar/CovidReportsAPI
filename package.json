@@ -2,6 +2,9 @@
   "name": "covid-reports-api",
   "version": "1.0.0",
   "description": "A Covid19 API",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "app.js",
   "scripts": {
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' mocha -r ts-node/register --exit ./src/tests/*.spec.ts",
